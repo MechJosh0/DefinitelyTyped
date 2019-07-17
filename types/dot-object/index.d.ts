@@ -59,6 +59,7 @@ declare namespace DotObject {
          *
          * @param {String} path
          * @param {Object} obj
+         * @param {Boolean} reindexArray
          * @return {Mixed} The removed value
          */
         del(path: string, obj: any, reindexArray?: boolean): any;
@@ -108,6 +109,7 @@ declare namespace DotObject {
          * @param {String} path
          * @param {Object} obj
          * @param {Boolean} remove
+         * @param {Boolean} reindexArray
          */
         pick(path: string, obj: any, remove?: boolean, reindexArray?: boolean): any;
         /**
@@ -116,6 +118,7 @@ declare namespace DotObject {
          *
          * @param {String} path
          * @param {Object} obj
+         * @param {Boolean} reindexArray
          * @return {Mixed} The removed value
          */
         remove(path: string, obj: any, reindexArray?: boolean): any;
