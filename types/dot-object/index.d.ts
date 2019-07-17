@@ -61,7 +61,7 @@ declare namespace DotObject {
          * @param {Object} obj
          * @return {Mixed} The removed value
          */
-        del(path: string, obj: any): any;
+        del(path: string, obj: any, reindexArray?: boolean): any;
         /**
          *
          * Move a property from one place to the other.
@@ -109,7 +109,7 @@ declare namespace DotObject {
          * @param {Object} obj
          * @param {Boolean} remove
          */
-        pick(path: string, obj: any, remove?: boolean): any;
+        pick(path: string, obj: any, remove?: boolean, reindexArray?: boolean): any;
         /**
          *
          * Remove value from an object using dot notation.
@@ -118,7 +118,7 @@ declare namespace DotObject {
          * @param {Object} obj
          * @return {Mixed} The removed value
          */
-        remove(path: string, obj: any): any;
+        remove(path: string, obj: any, reindexArray?: boolean): any;
         /**
          * @param {String} path dotted path
          * @param {String} v value to be set
